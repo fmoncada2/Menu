@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Girassol&display=swap');
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background: url('../Imagenes/banner.jpeg') no-repeat ;
+    background-size: cover;
+}
+
+header{
+    background-color: orange;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+header a{
+    color: white;
+}
+
+header a:hover{
+    color: black;
+}
+
+#boton{
+    display: none;
+}
+
+#Menu{
+    width: max-content;
+}
+
+#Menu ul{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+#Menu ul li{
+    list-style: none;
+    margin: 5px auto;
+}
+
+#Menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: x-large;
+}
+
+#Menu ul li a:hover{
+    color: black;
+}
+
+#slider{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.img{
+    width: 700px;
+    height: 500px;
+}
+
+#categoria{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#categoria article{
+    background-color: cadetblue;
+    box-sizing: border-box;
+    margin: 10px auto;
+    padding: 10px;
+    width: min-content;
+    height: min-content;
+    box-shadow: 4px 5px 8px 5px rgb(161, 159, 159);
+    text-align: center;
+}
+
+#categoria article a{
+    text-decoration: none;
+    color: white;
+}
+
+#categoria article a:hover{
+    color: black;
+}
+
+#categoria article h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+}
+
+#detalles{
+    background-color: beige;
+}
+
+#detalles div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 10px auto;
+    text-align: center;
+}
+
+#detalles div h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    color: gray;
+}
+
+#detalles div h3{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: medium;
+    color: blue;
+}
+
+#detalles div p{
+    color: black;
+    font-family: cursive;
+}
+
+#detalles div article{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#detalles div article img{
+    width: 700px;
+    height: 500px;
+}
+
+#contacto{
+    background-color: orange;
+    display: block;
+    flex-direction: row;
+}
+
+#contacto h2{
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    text-align: center;
+}
+
+#contacto h5{
+    color: rgb(23, 121, 201);
+    font-size: medium;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+#contacto span{
+    color: white;
+    margin-left: 300px;
+}
+
+#contacto p{
+    color: beige;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+#contacto iframe{
+    margin: 10px;
+}
+
+
+
+
+/* Definiendo los media queries medianos*/
+@media only screen and (max-width: 760px){
+    body{
+        background: rgb(60, 146, 245);
+    }
+    
+    header{
+        height: 125px;
+    }
+
+    #Menu ul{
+        flex-direction: column;  
+        width: 100%;
+    }
+
+    #boton {
+        display: block;
+    }
+
+    #categoria article p{
+        display: none;
+    }
+
+    #detalles img{
+        display: none;
+    }
+
+    #contacto{
+        background-color: orange;
+        display: block;
+        flex-direction: column;
+    }
+
+   
+}
+
+
+/* Media queries para pantallas pequeñas*/
+@media all and (max-width: 600px){
+    body{
+        background: rgb(131, 60, 245);
+    }
+
+    #slider {
+        display: none;
+    }
+
+    #categoria article h2{
+        font-size: small;
+    }
+
+    #detalles div h3{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: small;
+        color: blue;
+    }
+
+    #detalles div article img{
+        display: none;
+    }
+    
+    .none{
+        display: none;
+    }
+
+
+    
+    #contacto iframe{
+        display: none;
+    }
+    
+
+}
+
+@media only screen and (max-width:600px) and (orientation: landscape){
+    body{
+        background: pink
+    }
+}
